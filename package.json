@@ -1,0 +1,19 @@
+{
+  "name": "node-protobuf",
+  "version": "1.0.0",
+  "description": "Use nodejs to run the protobuf",
+  "main": "app.js",
+  "dependencies": {
+    "bufferhelper": "^0.2.1",
+    "express": "^4.17.1",
+    "protobufjs": "^6.8.8",
+    "protocol-buffers": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cd proto && node ProtoBuf.js",
+    "proto:product": "cd proto/ && protoc --js_out=import_style=commonjs,binary:. Product.proto"
+  },
+  "author": "Nelson Hsu",
+  "license": "ISC"
+}
